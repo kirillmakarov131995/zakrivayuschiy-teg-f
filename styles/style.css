@@ -53,13 +53,11 @@ img {
 
 .save-dialog::backdrop {
   background-color: rgb(0 0 0 / 0.75);
-  /* backdrop-filter: blur(7px); */
 }
 
 .button {
   position: relative;
   z-index: 15;
-  /* border: none; */
   border: var(--border);
   padding: 12.5px 37px;
   color: var(--text-color);
@@ -108,7 +106,6 @@ img {
 .button .button__icon {
   position: relative;
   transition: color 0.5s ease-in-out;
-  /* color: var(--button-color); */
 }
 
 .button:hover .button__icon {
@@ -135,12 +132,10 @@ body {
   padding-block-end: 103px;
   font-family: var(--font-main);
 
-  /* font-weight: 400; */
   font-variation-settings: "wght" var(--font-weight-card-text);
 
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  /* max-width: max(48.61% ,100%); */
 
   max-inline-size: 700px;
 }
@@ -167,11 +162,9 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  /* width: min(100%, 700px); */
   width: 100%;
   min-height: clamp(20.4375rem, 19.6232rem + 3.4742vw, 22.75rem);
   margin-block-end: 100px;
-  /* block-size: clamp(20.4375rem, 19.5352rem + 3.8498vw, 23rem); */
   border: var(--border);
   color: var(--text-color);
   background-color: var(--background-color);
@@ -261,7 +254,6 @@ body {
 }
 
 .content-item {
-  /* border: 2px solid black; */
   width: 100%;
 }
 
@@ -286,15 +278,15 @@ body {
 .card-image-container {
   position: relative;
   border: var(--border);
+  overflow: hidden;
   color: var(--text-color);
   aspect-ratio: 1/1;
   min-block-size: 371px;
-  overflow: hidden;
-
 }
 
 .card-image-title {
   position: absolute;
+  z-index: 1;
   opacity: 50%;
   color: var(--text-color);
   font-family: var(--font-accent);
@@ -304,7 +296,6 @@ body {
   text-shadow: 0 0 1px var(--background-color);
   inset-inline-end: clamp(0.8125rem, 0.5484rem + 1.1268vw, 1.5625rem);
   inset-block-start: 25px;
-  z-index: 1;
 }
 
 @supports (-webkit-text-stroke: 1px var(--background-color)) {
@@ -364,16 +355,11 @@ body {
   outline: 2px solid var(--text-color);
 }
 
-.is-liked {
-  fill: red;
-}
-
 .save-button {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  /* border: none; */
   border: var(--border);
 
   padding: 15px 21px 15px 19px;

@@ -83,6 +83,6 @@
       ),
       linear-gradient(180deg, #007f0c 0%, #004306 100%);
 
-      --button-color: var(--text-color);
+    --button-color: var(--text-color);
   }
 }
