@@ -295,10 +295,10 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
-  text-transform: uppercase;
   text-shadow: 0 0 1px var(--background-color);
   inset-inline-end: clamp(0.8125rem, 0.5484rem + 1.1268vw, 1.5625rem);
   inset-block-start: 25px;
+  z-index: 1;
 }
 
 @supports (-webkit-text-stroke: 1px var(--background-color)) {
@@ -454,7 +454,8 @@ body {
 /* filters */
 
 .filter-clean-canvas {
-  filter: blur(10px);
+  filter: blur(2px);
+  overflow: hidden;
 }
 
 .filter-if-i-fail {
