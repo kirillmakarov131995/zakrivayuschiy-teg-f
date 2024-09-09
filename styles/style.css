@@ -173,9 +173,6 @@ body {
   background-color: var(--background-color);
 }
 
-.theme-menu__list {
-}
-
 .theme-menu__button {
   position: relative;
   border: none;
