@@ -285,6 +285,8 @@ body {
   color: var(--text-color);
   aspect-ratio: 1/1;
   min-block-size: 371px;
+  overflow: hidden;
+
 }
 
 .card-image-title {
@@ -455,31 +457,30 @@ body {
 
 .filter-clean-canvas {
   filter: blur(2px);
-  overflow: hidden;
 }
 
 .filter-if-i-fail {
-  filter: hue-rotate(135deg) grayscale(0.8);
+  filter: hue-rotate(135deg) grayscale(80%);
 }
 
 .filter-pursuit-of-ideal {
-  filter: saturate(1.5);
+  filter: saturate(200%);
 }
 
 .filter-about-those-who-near {
-  filter: contrast(6);
+  filter: contrast(240%);
 }
 
 .filter-another-ways {
-  filter: sepia(5);
+  filter: sepia(100%);
 }
 
 .filter-when-feeling-down {
-  filter: invert(1);
+  filter: invert(75%);
 }
 
 .filter-here-and-now {
-  filter: brightness(3);
+  filter: brightness(250%);
 }
 
 @media (width <= 376px) {
