@@ -55,7 +55,7 @@
 .button {
   position: relative;
   z-index: 15;
-  border: none;
+  /* border: none; */
   border: var(--border);
   padding: 12.5px 37px;
   color: var(--text-color);
@@ -174,7 +174,6 @@ body {
 }
 
 .theme-menu__list {
-  margin-block-end: 25px;
 }
 
 .theme-menu__button {
@@ -244,6 +243,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  margin-block-end: 25px;
 }
 
 .main-content {
@@ -374,7 +374,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  border: none;
+  /* border: none; */
   border: var(--border);
 
   padding: 15px 21px 15px 19px;
