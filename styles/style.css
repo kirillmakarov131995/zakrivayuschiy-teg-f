@@ -454,6 +454,9 @@ body {
 }
 
 /* filters */
+.filter-default {
+  filter: brightness(120%) contrast(110%);
+}
 
 .filter-clean-canvas {
   filter: blur(2px);
