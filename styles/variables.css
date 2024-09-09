@@ -1,32 +1,40 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-    --font-main: "Inter-Variable", sans-serif;
-    --font-accent: "PressStart2P", sans-serif;
-    --font-weight-card-title: 600;
-    --font-weight-card-text: 400;
+  --font-main: "Inter-Variable", sans-serif;
+  --font-accent: "PressStart2P", sans-serif;
+  --font-weight-card-title: 600;
+  --font-weight-card-text: 400;
 
-    --background-color: #fff;
-    --text-color: #000;
-    --background-gradient: repeating-linear-gradient(to right, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px), 
-    repeating-linear-gradient(#d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
-    linear-gradient(180deg, #E7E7E7 0.01%, #1A1A1A 100%);
-    --background-gradient-color: #d3d3d3;
-    --background-gradient-color-start: #E7E7E7;
-    --background-gradient-color-end: #1A1A1A;
+  --background-color: #fff;
+  --text-color: #000;
+  --background-gradient: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0px,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      #d3d3d3 0px,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
+  --background-gradient-color: #d3d3d3;
+  --background-gradient-color-start: #e7e7e7;
+  --background-gradient-color-end: #1a1a1a;
 
-    --button-color: var(--background-color);
+  --button-color: var(--background-color);
 
-    /* --accent-color: #333; */
-    --border: 2px solid var(--text-color);
-    --background-image: url("../images/background-pattern.svg");
+  /* --accent-color: #333; */
+  --border: 2px solid var(--text-color);
+  --background-image: url("../images/background-pattern.svg");
 
+  --heart-outline-color: #000;
+  --heart-fill-color: #ff0000;
 
-    --heart-outline-color: #000;
-    --heart-fill-color: #FF0000;
-
-    --heart-contour-color: black;
-    --heart-sparks-color: var(--heart-fill-color);
-    /* --heart-body-color: var(--text-color);
-    --heart-core-color: var(--text-color); */
+  --heart-contour-color: black;
+  --heart-sparks-color: var(--heart-fill-color);
 }
