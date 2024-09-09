@@ -12,3 +12,42 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes themeMenuButton {
+    from {
+        transform: translateX(-4px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes likeButtonHeartSize {
+    0% {
+        transform-origin: center;
+        transform: scale(1);
+    }
+
+    50% {
+        transform-origin: center;
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform-origin: center;
+        transform: scale(1);
+    }
+}
+
+
+@keyframes likeButtonHeartSparks {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
