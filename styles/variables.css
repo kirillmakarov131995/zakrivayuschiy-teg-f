@@ -32,9 +32,9 @@
   --border: 2px solid var(--text-color);
   --background-image: url("../images/background-pattern.svg");
 
-  --heart-outline-color: #000;
+  --heart-outline-color: var(--text-color);
   --heart-fill-color: #ff0000;
 
-  --heart-contour-color: black;
+  --heart-contour-color: var(--text-color);
   --heart-sparks-color: var(--heart-fill-color);
 }

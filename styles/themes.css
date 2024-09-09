@@ -34,7 +34,11 @@
   --font-weight-title: 785;
   --font-weight-text: 465;
 
-  --heart-contour-color: var(--text-color);
+  /* --heart-outline-color: var(--accent-color);
+  --heart-fill-color: #ff0000;
+
+  --heart-contour-color: var(--accent-color);
+  --heart-sparks-color: var(--heart-fill-color); */
 }
 
 :root.theme-light {
@@ -78,5 +82,7 @@
         transparent 4px
       ),
       linear-gradient(180deg, #007f0c 0%, #004306 100%);
+
+      --button-color: var(--text-color);
   }
 }
