@@ -270,6 +270,7 @@ body {
 
 .card {
   width: 100%;
+  background-color: var(--background-color);
 }
 
 .card-title {
@@ -462,6 +463,39 @@ body {
   
 }
 
-@media (width <= 375px) {
 
+/* filters */
+
+.filter-clean-canvas {
+  filter: opacity(0.1);
+}
+
+.filter-if-i-fail {
+  filter: hue-rotate(135deg) grayscale(0.8);
+}
+
+.filter-pursuit-of-ideal {
+  filter: saturate(1.5);
+}
+
+.filter-about-those-who-near {
+  filter: contrast(6);
+}
+
+.filter-another-ways {
+  filter: sepia(5);
+}
+
+.filter-when-feeling-down {
+  filter: invert(1);
+}
+
+.filter-here-and-now {
+  filter: hue-rotate(331deg) brightness(3);
+}
+
+@media (width <= 376px) {
+  .save-button {
+    flex-direction: column;
+  }
 }
