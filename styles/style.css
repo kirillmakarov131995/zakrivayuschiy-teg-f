@@ -478,7 +478,7 @@ body {
 }
 
 .filter-here-and-now {
-  filter: hue-rotate(331deg) brightness(3);
+  filter: brightness(3);
 }
 
 @media (width <= 376px) {
