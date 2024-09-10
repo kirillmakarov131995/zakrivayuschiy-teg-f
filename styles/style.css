@@ -142,7 +142,7 @@ body {
 }
 
 .title-container {
-  margin-top: 138px;
+  margin-top: clamp(7.625rem, 7.2729rem + 1.5023vw, 8.625rem);
   text-align: center;
   /* margin-block-end: 25px; */
 }
@@ -167,10 +167,10 @@ body {
 }
 
 .header {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: center; */
+  justify-content: space-between;
+  /* align-items: center; */
   width: 100%;
   min-height: clamp(20.4375rem, 19.5792rem + 3.662vw, 22.875rem);
 
@@ -184,7 +184,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 18px;
+  margin-bottom: 20px;
 }
 
 .theme-menu__button {
