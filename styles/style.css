@@ -92,6 +92,7 @@ img {
 .button:hover::before {
   transform: scaleX(1);
 }
+
 .button .button__text {
   position: relative;
   transition: color 0.5s ease-in-out;
@@ -140,34 +141,50 @@ body {
   max-inline-size: 700px;
 }
 
+.title-container {
+  margin-top: 138px;
+  text-align: center;
+  /* margin-block-end: 25px; */
+}
+
 .title {
-  margin-block-end: 25px;
   color: var(--text-color);
   font-family: var(--font-accent);
   font-weight: 400;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   line-height: 100%;
   letter-spacing: 0;
-  text-align: center;
 }
 
 .title-subtitle {
+  color: var(--text-color);
+  font-family: var(--font-accent);
+  font-weight: 400;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   line-height: 100%;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
 .header {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
+  align-items: center; */
   width: 100%;
-  min-height: clamp(20.4375rem, 19.6232rem + 3.4742vw, 22.75rem);
-  margin-block-end: 100px;
+  min-height: clamp(20.4375rem, 19.5792rem + 3.662vw, 22.875rem);
+
+  margin-block-end: 102px;
   border: var(--border);
   color: var(--text-color);
   background-color: var(--background-color);
+}
+
+.header__theme-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 18px;
 }
 
 .theme-menu__button {
@@ -236,8 +253,9 @@ body {
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  margin-block-end: 25px;
+  gap: 10px;
+  padding-left: 16px;
+  /* margin-block-end: 25px; */
 }
 
 .main-content {
@@ -381,14 +399,12 @@ body {
 
 .core {
   opacity: 0;
-  transition: opacity 0.3s, fill 0.3s;
-  /* transition: opacity 0.3s 0.03s revert, fill 0.3s 0.03s revert; */
+  transition: opacity 0.3s linear, fill 0.3s linear;
 }
 
 .main-body {
   opacity: 0;
-  transition: opacity 0.3s 0.05s, fill 0.3s 0.05s;
-  /* transition: opacity 0.3s revert, fill 0.3s 0.05s; */
+  transition: opacity 0.3s 0.05s linear, fill 0.3s 0.05s linear;
 }
 
 .card__icon-button:hover .core,
@@ -419,7 +435,6 @@ body {
   opacity: 1;
   fill: var(--heart-fill-color);
   transition: opacity 0.3s 0.08s, fill 0.3s 0.08s;
-  /* transition: opacity 0.1s revert, fill 0.1s revert; */
 }
 
 .like-icon.is-liked .sparks {
