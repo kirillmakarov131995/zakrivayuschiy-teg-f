@@ -5,11 +5,6 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 
-/* html.theme-light {
-    --text-color: #000;
-    --background-color: #fff;
-} */
-
 :root.theme-dark {
   --text-color: #00cc14;
   --background-color: #000;
@@ -31,8 +26,8 @@
 
   --button-color: var(--text-color);
 
-  --font-weight-title: 785;
-  --font-weight-text: 465;
+  --font-weight-card-title: 785;
+  --font-weight-card-text: 465;
 
   /* --heart-outline-color: var(--accent-color);
   --heart-fill-color: #ff0000;
@@ -62,6 +57,8 @@
   --button-color: var(--background-color);
 
   --heart-contour-color: var(--text-color);
+  --font-weight-card-title: 700;
+  --font-weight-card-text: 400;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -84,5 +81,7 @@
       linear-gradient(180deg, #007f0c 0%, #004306 100%);
 
     --button-color: var(--text-color);
+    --font-weight-card-title: 785;
+    --font-weight-card-text: 465;
   }
 }

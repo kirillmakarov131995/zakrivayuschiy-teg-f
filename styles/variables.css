@@ -3,7 +3,7 @@
 :root {
   --font-main: "Inter-Variable", sans-serif;
   --font-accent: "PressStart2P", sans-serif;
-  --font-weight-card-title: 600;
+  --font-weight-card-title: 700;
   --font-weight-card-text: 400;
 
   --background-color: #fff;
@@ -29,7 +29,7 @@
   --button-color: var(--background-color);
 
   /* --accent-color: #333; */
-  --border: 2px solid var(--text-color);
+  --border: 2px solid var(--text-color, #000);
   --background-image: url("../images/background-pattern.svg");
 
   --heart-outline-color: var(--text-color);

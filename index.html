@@ -43,15 +43,11 @@
     </dialog>
 
     <header class="header">
-      <h1 class="title-container">
-        <span class="title">&lt;/HTML&gt;</span>
-        <br />
-        <span class="title-subtitle">закрывающий тег</span>
-      </h1>
-      <!-- <p class="title">&lt;/HTML&gt;</p>
-      <p  class="title-subtitle">закрывающий тег</p> -->
+      <a class="logo">&lt;/HTML&gt;</a>
+      <h1 class="title">закрывающий тег</h1>
+
+      <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
       <nav class="theme-menu header__theme-menu">
-        <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
             <button type="button" data-theme="dark" class="theme-menu__button">
@@ -79,17 +75,17 @@
     <main class="main-content">
       <ul class="content-list">
         <li class="content-item">
-          <section class="card">
+          <article class="card">
             <h2 class="card-title">
               Фритрек и нулевой спринт: Подготовка к работе
             </h2>
             <div class="card-image-container">
               <p class="card-image-title">&lt;/HTML&gt;</p>
               <picture>
-                <source class="filter-default" srcset="./images/image.avif" type="image/avif" />
-                <source class="filter-default" srcset="./images/image.webp" type="image/webp" />
+                <source class="card-image filter-default" srcset="./images/image.avif" type="image/avif" />
+                <source class="card-image filter-default" srcset="./images/image.webp" type="image/webp" />
                 <img
-                class="filter-default"
+                class="card-image filter-default"
                   src="./images/image.jpg"
                   srcset="
                     ./images/image.jpg    1x,
@@ -108,20 +104,19 @@
                   проникнуться основами и настроиться на учёбу. И, возможно,
                   подумать, как новые знания могут повлиять на ваше будущее.
                 </p>
-                <br />
                 <p class="card-text">
                   Место для ваших воспоминаний о начале обучения.
                 </p>
               </div>
 
               <div class="card__like-button-container">
-                <button class="card__icon-button">
+                <button class="card__icon-button" type="button">
                   <svg
                     class="like-icon"
                     width="39"
                     height="36"
                     viewBox="0 0 39 36"
-                    fill="none"
+                    fill="transparent"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <g class="heart">
@@ -134,13 +129,13 @@
                       <path
                         class="main-body"
                         d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
-                        fill="none"
+                        fill="transparent"
                       />
 
                       <path
                         class="core"
                         d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
-                        fill="none"
+                        fill="transparent"
                       />
                     </g>
 
@@ -152,23 +147,23 @@
                   </svg>
                 </button>
 
-                <button class="button card__like-button">
+                <button class="button card__like-button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
             </div>
-          </section>
+          </article>
         </li>
         <li class="content-item">
-          <section class="card">
+          <article class="card">
             <h2 class="card-title">1 спринт: Я — чистый лист</h2>
             <div class="card-image-container">
               <p class="card-image-title">&lt;/HTML&gt;</p>
               <picture>
-                <source class="filter-clean-canvas" srcset="./images/image.avif" type="image/avif" />
-                <source class="filter-clean-canvas" srcset="./images/image.webp" type="image/webp" />
+                <source class="card-image filter-clean-canvas" srcset="./images/image.avif" type="image/avif" />
+                <source class="card-image filter-clean-canvas" srcset="./images/image.webp" type="image/webp" />
                 <img
-                class="filter-clean-canvas"
+                class="card-image filter-clean-canvas"
                   src="./images/image.jpg"
                   srcset="
                     ./images/image.jpg    1x,
@@ -190,20 +185,19 @@
                   вопросы: с чего начать? а вдруг будет слишком сложно? что,
                   если я не справлюсь?
                 </p>
-                <br />
                 <p class="card-text">
                   Место для ваших воспоминаний о начале первого спринта.
                 </p>
               </div>
 
               <div class="card__like-button-container">
-                <button class="card__icon-button">
+                <button class="card__icon-button" type="button">
                   <svg
                     class="like-icon"
                     width="39"
                     height="36"
                     viewBox="0 0 39 36"
-                    fill="none"
+                    fill="transparent"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <g class="heart">
@@ -216,13 +210,13 @@
                       <path
                         class="main-body"
                         d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
-                        fill="none"
+                        fill="transparent"
                       />
 
                       <path
                         class="core"
                         d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
-                        fill="none"
+                        fill="transparent"
                       />
                     </g>
 
@@ -234,23 +228,23 @@
                   </svg>
                 </button>
 
-                <button class="button card__like-button">
+                <button class="button card__like-button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
             </div>
-          </section>
+          </article>
         </li>
         <li class="content-item">
-          <section class="card">
+          <article class="card">
             <h2 class="card-title">1 спринт: А если не получится?</h2>
             <div class="card-image-container">
               <p class="card-image-title">&lt;CSS&gt;</p>
               <picture>
-                <source class="filter-if-i-fail" srcset="./images/image.avif" type="image/avif" />
-                <source class="filter-if-i-fail" srcset="./images/image.webp" type="image/webp" />
+                <source class="card-image filter-if-i-fail" srcset="./images/image.avif" type="image/avif" />
+                <source class="card-image filter-if-i-fail" srcset="./images/image.webp" type="image/webp" />
                 <img
-                  class="filter-if-i-fail"
+                  class="card-image filter-if-i-fail"
                   src="./images/image.jpg"
                   srcset="
                     ./images/image.jpg    1x,
@@ -270,20 +264,19 @@
                   Или вы, наоборот, могли вдохновиться успехами и поверить в
                   себя.
                 </p>
-                <br />
                 <p class="card-text">
                   Место для ваших воспоминаний об окончании первого спринта.
                 </p>
               </div>
 
               <div class="card__like-button-container">
-                <button class="card__icon-button">
+                <button class="card__icon-button" type="button">
                   <svg
                     class="like-icon"
                     width="39"
                     height="36"
                     viewBox="0 0 39 36"
-                    fill="none"
+                    fill="transparent"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <g class="heart">
@@ -296,13 +289,13 @@
                       <path
                         class="main-body"
                         d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
-                        fill="none"
+                        fill="transparent"
                       />
 
                       <path
                         class="core"
                         d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
-                        fill="none"
+                        fill="transparent"
                       />
                     </g>
 
@@ -314,23 +307,23 @@
                   </svg>
                 </button>
 
-                <button class="button card__like-button">
+                <button class="button card__like-button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
             </div>
-          </section>
+          </article>
         </li>
         <li class="content-item">
-          <section class="card">
+          <article class="card">
             <h2 class="card-title">2 спринт: Погоня за идеалом</h2>
             <div class="card-image-container">
               <p class="card-image-title">desigions</p>
               <picture>
-                <source class="filter-pursuit-of-ideal" srcset="./images/image.avif" type="image/avif" />
-                <source class="filter-pursuit-of-ideal" srcset="./images/image.webp" type="image/webp" />
+                <source class="card-image filter-pursuit-of-ideal" srcset="./images/image.avif" type="image/avif" />
+                <source class="card-image filter-pursuit-of-ideal" srcset="./images/image.webp" type="image/webp" />
                 <img
-                  class="filter-pursuit-of-ideal"
+                  class="card-image filter-pursuit-of-ideal"
                   src="./images/image.jpg"
                   srcset="
                     ./images/image.jpg    1x,
@@ -351,20 +344,19 @@
                   вовсе и не подвержены перфекционизму и вместо того, чтобы
                   сделать идеально, старались просто сделать.
                 </p>
-                <br />
                 <p class="card-text">
                   Место для ваших воспоминаний о начале второго спринта.
                 </p>
               </div>
 
               <div class="card__like-button-container">
-                <button class="card__icon-button">
+                <button class="card__icon-button" type="button">
                   <svg
                     class="like-icon"
                     width="39"
                     height="36"
                     viewBox="0 0 39 36"
-                    fill="none"
+                    fill="transparent"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <g class="heart">
@@ -377,13 +369,13 @@
                       <path
                         class="main-body"
                         d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
-                        fill="none"
+                        fill="transparent"
                       />
 
                       <path
                         class="core"
                         d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
-                        fill="none"
+                        fill="transparent"
                       />
                     </g>
 
@@ -395,23 +387,23 @@
                   </svg>
                 </button>
 
-                <button class="button card__like-button">
+                <button class="button card__like-button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
             </div>
-          </section>
+          </article>
         </li>
         <li class="content-item">
-          <section class="card">
+          <article class="card">
             <h2 class="card-title">2 спринт: О тех, кто рядом</h2>
             <div class="card-image-container">
               <p class="card-image-title">&lt;care&gt;</p>
               <picture>
-                <source class="filter-about-those-who-near" srcset="./images/image.avif" type="image/avif" />
-                <source class="filter-about-those-who-near" srcset="./images/image.webp" type="image/webp" />
+                <source class="card-image filter-about-those-who-near" srcset="./images/image.avif" type="image/avif" />
+                <source class="card-image filter-about-those-who-near" srcset="./images/image.webp" type="image/webp" />
                 <img
-                  class="filter-about-those-who-near"
+                  class="card-image filter-about-those-who-near"
                   src="./images/image.jpg"
                   srcset="
                     ./images/image.jpg    1x,
@@ -433,20 +425,19 @@
                   поддавался. Осваивать что-то новое легче, когда рядом есть
                   единомышленники, не правда ли?
                 </p>
-                <br />
                 <p class="card-text">
                   Место для ваших воспоминаний об окончании второго спринта.
                 </p>
               </div>
 
               <div class="card__like-button-container">
-                <button class="card__icon-button">
+                <button class="card__icon-button" type="button">
                   <svg
                     class="like-icon"
                     width="39"
                     height="36"
                     viewBox="0 0 39 36"
-                    fill="none"
+                    fill="transparent"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <g class="heart">
@@ -459,13 +450,13 @@
                       <path
                         class="main-body"
                         d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
-                        fill="none"
+                        fill="transparent"
                       />
 
                       <path
                         class="core"
                         d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
-                        fill="none"
+                        fill="transparent"
                       />
                     </g>
 
@@ -477,23 +468,23 @@
                   </svg>
                 </button>
 
-                <button class="button card__like-button">
+                <button class="button card__like-button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
             </div>
-          </section>
+          </article>
         </li>
         <li class="content-item">
-          <section class="card">
+          <article class="card">
             <h2 class="card-title">3 спринт: Обходные стратегии</h2>
             <div class="card-image-container">
               <p class="card-image-title">&lt;support&gt;</p>
               <picture>
-                <source class="filter-another-ways" srcset="./images/image.avif" type="image/avif" />
-                <source class="filter-another-ways" srcset="./images/image.webp" type="image/webp" />
+                <source class="card-image filter-another-ways" srcset="./images/image.avif" type="image/avif" />
+                <source class="card-image filter-another-ways" srcset="./images/image.webp" type="image/webp" />
                 <img
-                  class="filter-another-ways"
+                  class="card-image filter-another-ways"
                   src="./images/image.jpg"
                   srcset="
                     ./images/image.jpg    1x,
@@ -512,20 +503,19 @@
                   момент вам могло показаться, что решения просто иссякли.
                   Значит, пришло время посмотреть на задачу под другим углом.
                 </p>
-                <br />
                 <p class="card-text">
                   Место для ваших воспоминаний о начале третьего спринта.
                 </p>
               </div>
 
               <div class="card__like-button-container">
-                <button class="card__icon-button">
+                <button class="card__icon-button" type="button">
                   <svg
                     class="like-icon"
                     width="39"
                     height="36"
                     viewBox="0 0 39 36"
-                    fill="none"
+                    fill="transparent"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <g class="heart">
@@ -538,13 +528,13 @@
                       <path
                         class="main-body"
                         d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
-                        fill="none"
+                        fill="transparent"
                       />
 
                       <path
                         class="core"
                         d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
-                        fill="none"
+                        fill="transparent"
                       />
                     </g>
 
@@ -556,23 +546,23 @@
                   </svg>
                 </button>
 
-                <button class="button card__like-button">
+                <button class="button card__like-button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
             </div>
-          </section>
+          </article>
         </li>
         <li class="content-item">
-          <section class="card">
+          <article class="card">
             <h2 class="card-title">3 спринт: Когда опускаются руки</h2>
             <div class="card-image-container">
               <p class="card-image-title">&lt;lifes-style: none;&gt;</p>
               <picture>
-                <source class="filter-when-feeling-down" srcset="./images/image.avif" type="image/avif" />
-                <source class="filter-when-feeling-down" srcset="./images/image.webp" type="image/webp" />
+                <source class="card-image filter-when-feeling-down" srcset="./images/image.avif" type="image/avif" />
+                <source class="card-image filter-when-feeling-down" srcset="./images/image.webp" type="image/webp" />
                 <img
-                  class="filter-when-feeling-down"
+                  class="card-image filter-when-feeling-down"
                   src="./images/image.jpg"
                   srcset="
                     ./images/image.jpg    1x,
@@ -593,20 +583,19 @@
                   забыть пожить. В такие моменты очень нужна концентрация.
                   Вспомните, откуда вы её черпали.
                 </p>
-                <br />
                 <p class="card-text">
                   Место для ваших воспоминаний об окончании третьего спринта.
                 </p>
               </div>
 
               <div class="card__like-button-container">
-                <button class="card__icon-button">
+                <button class="card__icon-button" type="button">
                   <svg
                     class="like-icon"
                     width="39"
                     height="36"
                     viewBox="0 0 39 36"
-                    fill="none"
+                    fill="transparent"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <g class="heart">
@@ -619,13 +608,13 @@
                       <path
                         class="main-body"
                         d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
-                        fill="none"
+                        fill="transparent"
                       />
 
                       <path
                         class="core"
                         d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
-                        fill="none"
+                        fill="transparent"
                       />
                     </g>
 
@@ -637,23 +626,23 @@
                   </svg>
                 </button>
 
-                <button class="button card__like-button">
+                <button class="button card__like-button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
             </div>
-          </section>
+          </article>
         </li>
         <li class="content-item">
-          <section class="card">
+          <article class="card">
             <h2 class="card-title">«Сейчас я здесь»</h2>
             <div class="card-image-container">
               <p class="card-image-title">&lt;experience&gt;</p>
               <picture>
-                <source class="filter-here-and-now" srcset="./images/image.avif" type="image/avif" />
-                <source class="filter-here-and-now" srcset="./images/image.webp" type="image/webp" />
+                <source class="card-image filter-here-and-now" srcset="./images/image.avif" type="image/avif" />
+                <source class="card-image filter-here-and-now" srcset="./images/image.webp" type="image/webp" />
                 <img
-                  class="filter-here-and-now"
+                  class="card-image filter-here-and-now"
                   src="./images/image.jpg"
                   srcset="
                     ./images/image.jpg    1x,
@@ -676,7 +665,6 @@
                   случай, когда важен сам процесс познания. Ведь часто путь — и
                   есть результат.
                 </p>
-                <br />
                 <p class="card-text">
                   Место, чтобы остановиться, подумать и написать, что вы
                   чувствуете в этой точке пути.
@@ -684,13 +672,13 @@
               </div>
 
               <div class="card__like-button-container">
-                <button class="card__icon-button">
+                <button class="card__icon-button" type="button">
                   <svg
                     class="like-icon"
                     width="39"
                     height="36"
                     viewBox="0 0 39 36"
-                    fill="none"
+                    fill="transparent"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <g class="heart">
@@ -703,13 +691,13 @@
                       <path
                         class="main-body"
                         d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
-                        fill="none"
+                        fill="transparent"
                       />
 
                       <path
                         class="core"
                         d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
-                        fill="none"
+                        fill="transparent"
                       />
                     </g>
 
@@ -721,12 +709,12 @@
                   </svg>
                 </button>
 
-                <button class="button card__like-button">
+                <button class="button card__like-button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
             </div>
-          </section>
+          </article>
         </li>
       </ul>
 
@@ -738,9 +726,7 @@
       >
         <svg
           class="button__icon"
-          width="21"
-          height="21"
-          viewBox="0 0 21 21"
+          viewBox="0 0 29 28"
           fill="inherit"
           xmlns="http://www.w3.org/2000/svg"
         >
