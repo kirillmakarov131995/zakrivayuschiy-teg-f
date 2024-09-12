@@ -347,6 +347,7 @@
   transition: outline-color 0.5s ease-in-out;
   cursor: pointer;
   appearance: none;
+  height: 34px;
 }
 
 .card__icon-button:focus {
