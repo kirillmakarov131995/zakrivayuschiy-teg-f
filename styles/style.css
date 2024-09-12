@@ -430,6 +430,7 @@
   flex-shrink: 0;
   width: 39px;
   height: 39px;
+  color: var(--button-color);
 }
 
 .save-dialog__text {
