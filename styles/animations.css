@@ -14,64 +14,64 @@
 */
 
 @keyframes slideLeftRight {
-    from {
-      transform: translateX(-4px);
-    }
-  
-    to {
-      transform: translateX(0);
-    }
-  }
-  
-  @keyframes scaleUp {
-    from {
-      transform: scale(1);
-      transform-origin: center;
-    }
-  
-    to {
-      transform: scale(1.5);
-      transform-origin: center;
-    }
-  }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  .sparks {
-    opacity: 0;
-  }
-  
-  /* HOVER */
-  .core {
-    fill: transparent;
-    transition: fill 0.3s 0.03s linear;
-  }
-  
-  .main-body {
-    fill: transparent;
-    transition: fill 0.3s linear;
-  }
-  
-  .card__icon-button:hover .core {
-    fill: var(--text-color, #000);
-    transition: fill 0.3s linear ;
+  from {
+    transform: translateX(-4px);
   }
 
-  .card__icon-button:hover .main-body {
-    fill: var(--text-color, #000);
-    transition: fill 0.3s 0.05s linear;
+  to {
+    transform: translateX(0);
   }
-  
-  /* Leave hovering */
-  /* .card__icon-button:not(:hover) .core,
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(1);
+    transform-origin: center;
+  }
+
+  to {
+    transform: scale(1.5);
+    transform-origin: center;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.sparks {
+  opacity: 0;
+}
+
+/* HOVER */
+.core {
+  fill: transparent;
+  transition: fill 0.3s 0.03s linear;
+}
+
+.main-body {
+  fill: transparent;
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--text-color, #000);
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--text-color, #000);
+  transition: fill 0.3s 0.05s linear;
+}
+
+/* Leave hovering */
+/* .card__icon-button:not(:hover) .core,
   .card__icon-button:not(:active) .core {
     transition: fill 0.3s 0.03s linear;
   }
@@ -81,60 +81,60 @@
     transition: fill 0.3s linear;
   }
    */
-  /* ACTIVE */
-  .card__icon-button:active .core {
-    fill: var(--heart-fill-color, #ff0000);
-    transition: fill 0.3s linear;
-  }
-  
-  .card__icon-button:active .main-body {
-    fill: var(--heart-fill-color, #ff0000);
-    transition: fill 0.3s 0.05 linear;
-  }
-  
-  /* IS LIKED */
-  .like-icon.is-liked .core {
-    fill: var(--heart-fill-color, #ff0000);
-    transition: fill 0.3s linear;
-  }
-  
-  .like-icon.is-liked .main-body {
-    fill: var(--heart-fill-color, #ff0000);
-    transition: fill 0.3s 0.05s linear;
-  }
-  
-  /* .like-icon:not(.is-liked) .main-body  {
+/* ACTIVE */
+.card__icon-button:active .core {
+  fill: var(--heart-fill-color, #ff0000);
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--heart-fill-color, #ff0000);
+  transition: fill 0.3s 0.05 linear;
+}
+
+/* IS LIKED */
+.like-icon.is-liked .core {
+  fill: var(--heart-fill-color, #ff0000);
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--heart-fill-color, #ff0000);
+  transition: fill 0.3s 0.05s linear;
+}
+
+/* .like-icon:not(.is-liked) .main-body  {
     transition: fill 0.3s 0.3s linear;
   } */
-  
-  .like-icon.is-liked .contour {
-    fill: var(--heart-fill-color, #ff0000);
-    transition: fill 0.3s 0.06s linear;
-  }
-  
-  .like-icon:not(.is-liked) .contour {
-    transition: fill 0.1s linear;
-  }
-  
-  .like-icon.is-liked {
-    animation-name: scaleUp;
-    animation-delay: 0.1s;
-    animation-direction: alternate;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 0.3s;
-  }
-  
-  .like-icon.is-liked .sparks {
-    opacity: 0;
-    animation-name: fadeIn;
-    animation-delay: 0.3s;
-    animation-direction: alternate;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 0.3s;
-  }
-  
-  /* .like-icon.is-liked .heart {
+
+.like-icon.is-liked .contour {
+  fill: var(--heart-fill-color, #ff0000);
+  transition: fill 0.3s 0.06s linear;
+}
+
+.like-icon:not(.is-liked) .contour {
+  transition: fill 0.1s linear;
+}
+
+.like-icon.is-liked {
+  animation-name: scaleUp;
+  animation-delay: 0.1s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.3s;
+}
+
+.like-icon.is-liked .sparks {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-delay: 0.3s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.3s;
+}
+
+/* .like-icon.is-liked .heart {
   
   } */
