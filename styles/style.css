@@ -72,7 +72,7 @@
   color: var(--button-color);
   transition: color 0.5s ease-in-out;
   mix-blend-mode: difference;
-} 
+}
 
 .page {
   display: flex;
@@ -338,6 +338,7 @@
 } */
 
 .card__icon-button {
+  height: 34px;
   border: none;
   outline: 2px solid transparent;
   color: var(--text-color, #000);
@@ -350,7 +351,6 @@
   transition: outline-color 0.5s ease-in-out;
   cursor: pointer;
   appearance: none;
-  height: 34px;
 }
 
 .card__icon-button:focus {
