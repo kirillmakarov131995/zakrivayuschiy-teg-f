@@ -52,7 +52,7 @@
   /* HOVER */
   .core {
     fill: transparent;
-    transition: fill 0.3s 0.03 linear;
+    transition: fill 0.3s 0.03s linear;
   }
   
   .main-body {
@@ -62,12 +62,12 @@
   
   .card__icon-button:hover .core {
     fill: var(--text-color, #000);
-    transition: fill 0.3s linear;
+    transition: fill 0.3s linear ;
   }
 
   .card__icon-button:hover .main-body {
     fill: var(--text-color, #000);
-    transition: fill 0.3s 0.05 linear;
+    transition: fill 0.3s 0.05s linear;
   }
   
   /* Leave hovering */
